@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/btnHolderLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/deaf_register"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="700dp"
+            android:layout_weight="1"
+            android:text="Tap \nleft \n if \ndeaf"
+            android:textColor="@color/black"
+            android:textSize="45sp"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/black" />
+
+        <Button
+            android:id="@+id/blind_register"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="700dp"
+            android:layout_weight="1"
+            android:onClick="onButtonClicked"
+            android:text="Tap \nright \n if \nblind"
+            android:textColor="@color/black"
+            android:textSize="45sp"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/black" />
+    </LinearLayout>
+</RelativeLayout>
